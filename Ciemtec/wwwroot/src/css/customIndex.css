@@ -1,0 +1,158 @@
+
+.navbar-custom{
+    background-color: #002855;
+}
+
+.font-color{
+    color: white;
+}
+
+
+.navigation-menu > li > a{
+    color: #ffffff;
+}
+
+.navigation-menu > li > a::after{
+    color: #ffffff;
+}
+
+.topbar-menu{
+    background-color: #EF3340;
+    width: 100%;
+}
+
+#topnav{
+    padding: 0%;
+}
+
+.notification-list .noti-title{
+    background-color: #002855;    
+}
+
+/* FOOTER */
+.footerCustome{
+    text-align: center;
+    color: gray;
+    font-weight: bold;     
+    margin-top: 5em;   
+    margin-bottom: -5%;
+}
+
+.btn-ciemtec{
+    margin-top: 1.5rem;
+    background-color: #002855;
+    border-color: #EF3340;
+    opacity: 1 !important;
+    color: white;
+}
+
+ .Box-Button :hover{
+    color: #EF3340 !important;
+    border-color: #EF3340 !important;    
+}
+
+.Box-Button :active{
+    border-color: #EF3340 !important;    
+}
+
+.badge-ciemtec{
+ background-color: #002855;
+}
+
+.badge-ciemtec-danger{
+    background-color: #EF3340;
+}
+
+.ciemtec-box{
+    margin-bottom: 1.5rem;
+}
+
+.ciemtec-document-edited{
+    color: #EF3340;
+}
+.wizard>.content>.body input {
+    display: block;
+    border-color: #ced4da;
+}
+
+.wizard>.content>.body input ::after {
+    border-color: #ced4da !important;
+}
+
+.container.d-flex.flex-column.justify-content-center.body-content.align-items-center {
+    max-width: 1500px;
+}
+
+.row.cuerpo {
+    margin-top: 12% !important;
+}
+
+a[href="pagina-insumos.html"]:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.has-submenu.active {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+#topnav .has-submenu.active > a {
+    color: #fff !important;
+}
+
+.detalles {
+    color: #007bdb;
+}
+
+.detalles:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.table th, td {
+    text-align: center;
+}
+
+.navigation-menu > li.last-elements .submenu {
+    left: 0 !important;
+}
+
+.crud {
+    display: flex;
+}
+
+.checkbox-crud {
+    margin-top: 1%;
+    margin-right: 1%
+}
+
+.checkbox-crud.after {
+    margin-left: 1%;
+}
+
+@media (min-width: 992px) {
+    .navigation-menu > li > a:active, .navigation-menu > li > a:focus, .navigation-menu > li > a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 460px) {
+    .row.cuerpo {
+        margin-top: 20% !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .row.cuerpo {
+        margin-top: 25% !important;
+    }
+}
+#topnav {
+    position: absolute !important;
+}
+
+.navbar-custom {
+    position: absolute !important;
+}

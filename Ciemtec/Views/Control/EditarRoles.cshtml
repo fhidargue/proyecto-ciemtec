@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "ControlIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="wrapper">
+    <div class="container-fluid">
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="pagina-inicial.html">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="@Url.ActionLink("ControlIndex","Control")">Control</a></li>
+                            <li class="breadcrumb-item"><a href="@Url.ActionLink("RolesIndex","Control")">Roles</a></li>
+                            <li class="breadcrumb-item active">Editar Roles</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Edición de Roles</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card-box">
+                    <section>
+                        <form id="new-role-form" action="/">
+                            <h3>Edición de un Rol</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group clearfix">
+                                        <label for="nombre-rol">Nombre del rol</label>
+                                        <div>
+                                            <input class="form-control" id="nombre-rol" name="nombre-rol" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="modulos">Módulo</label>
+                                    <select class="form-control" id="modulosSelectEdit">
+                                        <option value="1">Control</option>
+                                        <option value="2">Equipos</option>
+                                        <option value="3">Insumos</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="permisos">Permisos</label>
+                                    <div class="crud" id="divRolEdit">
+                                        @*<input class="checkbox-crud" type="checkbox" id="read" name="read" value="1" />
+                                            <label for="read">Ver datos</label><br />
+                                            <input class="checkbox-crud after" type="checkbox" id="update" name="update" value="2" />
+                                            <label for="update">Modificar datos</label><br />
+                                            <input class="checkbox-crud after" type="checkbox" id="add" name="add" value="3" />
+                                            <label for="add">Crear datos</label><br />
+                                            <input class="checkbox-crud after" type="checkbox" id="delete" name="delete" value="4" />
+                                            <label for="delete">Eliminar datos</label>*@
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group clearfix">
+                                        <label for="new-role"></label>
+                                        <div>
+                                            <button id="new-role" type="submit" class="btn btn-primary" style="margin-top: 1.5%;">Confirmar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/src/src/js/vendor/jquery.js"></script>
+<script src="~/src/libs/jquery-validation/jquery.validate.min.js"></script>
+<script src="~/src/js/rol-edit.js"></script>

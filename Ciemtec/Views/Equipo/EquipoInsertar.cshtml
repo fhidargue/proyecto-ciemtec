@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewData["Title"] = "EquipoInsertar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="wrapper">
+    <div class="container-fluid">
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="pagina-inicial.html">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="pagina-control.html">Equipos</a></li>
+                            <li class="breadcrumb-item active">Insertar Equipo</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Insertar Equipo</h4>
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card-box">
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="steps clearfix ciemtec-box">
+
+                            <div class="form-group float-left ciemtec-box">
+                                <h3>Fecha actual</h3>
+                                <input type="text" value="12/09/2020" class="form-control text-centers"
+                                       id="exampleInputEmail1" readonly>
+                            </div>
+                        </div>
+                            <form id="wizard-validation-form" action="#">
+                                <div>
+                                    <h4>Informacion del Equipo</h4>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="placa">Placa del Equipo</label>
+                                                    <div>
+                                                        <input class="form-control" id="placa" name="placa"
+                                                               type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="nombre-equipo">Nombre del Equipo</label>
+                                                    <div>
+                                                        <input id="nombre-equipo" name="nombre-equipo" class="form-control">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end row -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="proveedor-equipo">Proveedor del Equipo</label>
+                                                    <div>
+                                                        <input id="proveedor-equipo" name="proveedor-equipo"
+                                                               class="form-control">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <div class="form-group">
+                                                        <label for="descripcion">Descripción</label>
+                                                        <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <h3>Información Extra</h3>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="agregado-por">Agregado Equipo por:</label>
+                                                    <div>
+                                                        <input id="agregado-por" name="agregado-por" type="text"
+                                                               class="form-control" value="Luís" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="tipo-equipo">Tipo de Equipo</label>
+                                                    <select class="form-control" id="tipo-equipo">
+                                                        <option>Control</option>
+                                                        <option>Fijo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div><!-- end row -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="ubicacion-equipo">Ubicación del Equipo</label>
+                                                    <select class="form-control" id="ubicacion-equipo">
+                                                        <option>Laboratorio de Metalurgia</option>
+                                                        <option>Laboratorio de Rx</option>
+                                                        <option>Bodega 1</option>
+                                                        <option>TEC</option>
+                                                        <option>ETC</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <label for="costoEquipo">Costo del Equipo</label>
+
+
+
+                                                    <label class="sr-only" for="inlineFormInputGroup">Costo Inicial</label>
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">₡</div>
+                                                        </div>
+                                                        <input type="number" class="form-control" id="inlineFormInputGroup" >
+
+
+
+
+
+
+                                                    </div>
+                                                </div>
+
+                                        </div><!-- end row -->
+                                    </section>
+                                    <h4>Imagen del Equipo</h4>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group clearfix">
+                                                    <input type="file" class="dropify" data-height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </section>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <!-- end row -->
+
+                </div>
+            </div><!-- end col-->
+
+        </div>
+        <!-- end row -->
+    </div><!-- end col -->
+</div>
+

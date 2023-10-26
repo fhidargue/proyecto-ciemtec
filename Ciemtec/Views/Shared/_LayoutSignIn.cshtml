@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Ciemtec favicon-->
+    <link rel="shortcut icon" href="~/src/images/ciemtec/favicon.ico">
+    <!--Apps css-->
+
+    <link rel="stylesheet" href="~/src/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/src/css/app.css" />
+    <link rel="stylesheet" href="~/src/libs/jquery-validation/site-demos.css" />
+    <link rel="stylesheet" href="~/src/css/customLogin.css" />
+    <link rel="stylesheet" href="~/src/css/custom.css" />
+    <link rel="stylesheet" href="~/src/css/icons.css" />
+
+
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+
+    <!--#region Body -->
+    <div class="container">
+        @RenderBody()
+    </div>
+    <!--#endregion-->
+    <!--#region Scripts-->
+    <script src="~/src/src/js/vendor/jquery.js"></script>
+    <script src="~/src/libs/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/src/js/signin.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <!--#endregion-->
+</body>
+</html>

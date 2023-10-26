@@ -1,0 +1,200 @@
+﻿@model EmpleadoCreateViewModel
+@{
+    ViewData["Title"] = "ControlIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="wrapper">
+    <div class="container-fluid">
+        <!-- start page title -->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="pagina-inicial.html">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="@Url.ActionLink("ControlIndex","Control")">Control</a></li>
+                            <li class="breadcrumb-item active">Crear usuario</li>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">Crear usuario</h4>
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-box">
+                    <div class="row mt-4">
+                        <div class="col-12">
+
+                            <!-- Fecha de hoy -->
+
+                            <div class="steps clearfix ciemtec-box">
+
+                                <div class="form-group float-left ">
+                                    <h4>Fecha actual</h4>
+                                    <input type="text" value="12/09/2020" class="form-control text-centers" id="fechaActual" readonly>
+                                </div>
+                            </div>
+
+                            <!-- Fin fecha de hoy -->
+
+                            <form method="post" asp-action="CrearEmpleado" asp-controller="Control">
+
+                                <h4>Información Personal</h4>
+
+                                <section>
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="CedulaEmpleado">Cédula</label>
+                                                @Html.TextBoxFor(m => m.CedulaEmpleado, new { @class = "form-control", @type = "text", @name = "CedulaEmpleado", @id = "CedulaEmpleado" })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="NombreEmpleado">Nombre</label>
+                                                @Html.TextBoxFor(m => m.NombreEmpleado, new { @class = "form-control", @type = "text", @name = "NombreEmpleado", @id = "NombreEmpleado" })
+                                            </div>
+                                        </div>
+                                    </div><!-- end row -->
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="ApellidoPaternoEmpleado">Primer apellido</label>
+                                                @Html.TextBoxFor(m => m.ApellidoPaternoEmpleado, new { @class = "form-control", @type = "text", @name = "ApellidoPaternoEmpleado", @id = "ApellidoPaternoEmpleado" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="ApellidoMaternoEmpleado">Segundo apellido</label>
+                                                @Html.TextBoxFor(m => m.ApellidoMaternoEmpleado, new { @class = "form-control", @type = "text", @name = "ApellidoMaternoEmpleado", @id = "ApellidoMaternoEmpleado" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <hr />
+
+                                <h4>Información de Cuenta</h4>
+                                <section>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="UsuarioEmpleado">Usuario</label>
+                                                @Html.TextBoxFor(m => m.UsuarioEmpleado, new { @class = "form-control", @type = "text", @name = "UsuarioEmpleado", @id = "UsuarioEmpleado" })
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="CorreoEmpleado">Correo electrónico</label>
+                                                @Html.TextBoxFor(m => m.CorreoEmpleado, new { @class = "form-control", @type = "text", @name = "CorreoEmpleado", @id = "correo" })
+
+                                            </div>
+                                        </div>
+
+                                    </div><!-- end row -->
+
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="username">Contraseña</label>
+                                                @Html.TextBoxFor(m => m.ContraseniaEmpleado, new { @class = "form-control", @type = "text", @name = "contrasenia", @id = "username" })
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="contrasenia">Confimar contraseña</label>
+                                                <input name="confirmar-contrasenia" class="form-control">
+                                            </div>
+                                        </div>
+
+
+                                    </div><!-- end row -->
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="exampleSelect1">Rol</label>
+                                            @Html.DropDownListFor(m => m.IdentificadorRol, new SelectList(Model.Roles, "IdentificadorRol", "NombreRol"), new { @class = "form-control" })
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="imagenPerfil">Foto de perfil</label>
+                                            <div class="form-group clearfix">
+                                                <input type="file" class="dropify" id="imagenPerfil" />
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </section>
+                                <!--<h3>Detalles de creación</h3>
+                                <section>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="agregado-por">Agregado por:</label>
+                                                <div>
+                                                    <input id="agregado-por" name="agregado-por" type="text"
+                                                           class="form-control" value="Luís" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <label for="fecha">Día agregado</label>
+                                                <div>
+                                                    <input id="fecha" name="fechas" type="text"
+                                                           class="form-control" value="2014/01/01" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>-->
+                                <!-- end row -->
+                                <!--</section><br />-->
+                                <br />
+                                <section>
+                                    <div class="row">
+                                        <div class="col-6">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix float-right">
+                                                @*<button id="add-user" type="submit" class="btn btn-primary">Agregar</button>*@
+                                                <input type="submit" class="btn btn-primary" value="Agregar" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="~/src/src/js/vendor/jquery.js"></script>
+<script src="~/src/js/create-employee.js"></script>

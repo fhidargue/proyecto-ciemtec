@@ -1,0 +1,116 @@
+﻿.main-div {
+    height: 100vh;
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto
+}
+
+.bg-ciemtec-blue {
+    background-color: #002855;
+}
+
+
+.bg-ciemtec-red {
+    background-color: #EF3340;
+}
+
+.txt-ciemtec-red {
+    color: #EF3340;
+}
+
+    .txt-ciemtec-red:hover {
+        color: #EF3340;
+    }
+
+.bg-ciemtec-red:hover {
+    color: #EF3340;
+}
+
+.topbar-menu {
+    background-color: #EF3340;
+    width: 100%;
+}
+
+
+.navigation-menu > li > a {
+    color: #ffff;
+}
+
+.btn-facebook {
+    color: #fff !important;
+    background-color: #3b5998 !important;
+}
+
+.btn-twitter {
+    color: #fff !important;
+    background-color: #00aced !important;
+}
+
+.btn-instagram {
+    color: #fff !important;
+    background-color: #517fa4 !important;
+}
+
+footer {
+    padding: 10px 0px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: none;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+#topnav {
+    position: absolute;
+    padding: 0;
+}
+
+.body-content {
+    min-height: calc(100vh - 130px - 126px);
+}
+
+@media (min-width: 992px) {
+    .navigation-menu > li > a :active .navigation-menu > li > a:focus, .navigation-menu > li > a:hover {
+        /*color: #ffff !important;*/
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .center-menu #topnav .navigation-menu {
+        text-align: center;
+    }
+
+    /*   .navigation-menu > li > a:hover, .navigation-menu > li > a:focus, .navigation-menu > li > a:active {
+        color: #ffff;
+    }*/
+}
+
+@media screen and (max-width: 992px) {
+    .body-content {
+        min-height: calc(100vh - 70px - 126px);
+    }
+
+    .navigation-menu > li > a :active .navigation-menu > li > a:focus, .navigation-menu > li > a:hover {
+        color: #002855 !important;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 992px) {
+    .navigation-menu > li:hover a {
+        color: white !important;
+    }
+}
+

@@ -1,0 +1,51 @@
+﻿@model Ciemtec_FND.Models.ViewModel.UserViewModel
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+    Layout = "~/Views/Shared/_LayoutSignIn.cshtml";
+}
+<div class="authentication-bg mt-5">
+    <div class="account-pages">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 col-xl-5">
+                <div class="account-card-box">
+                    <div class="card mb-0">
+                        <div class="card-body p-4 bg-ciemtec-blue">
+                            <div class="text-center">
+                                <div class="my-3">
+                                    <a>
+                                        <span><img src="../src/images/ciemtec/logo.png" style="height: 100px;" alt="" height="28"></span>
+                                    </a>
+                                </div>
+                                <h5 class="text-muted text-uppercase py-3 font-16">Iniciar Sesión</h5>
+                            </div>
+                            <form method="post" asp-action="SigningIn" asp-controller="SignIn" class="mt-2" id="formInicioSesion">
+                                <div class="form-group mb-3">
+                                    <label class="text-white font-weight-bold" asp-for="Username"></label>
+                                    <input class="form-control" type="text" name="username" asp-for="Username">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <label class="text-white font-weight-bold" asp-for="Password">Contraseña</label>
+                                    <input class="form-control" type="password" name="password" asp-for="Password">
+                                </div>
+
+                                @*<div class="form-group mb-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked>
+                                            <label class="custom-control-label" for="checkbox-signin" style="color: white;">Recuérdame</label>
+                                        </div>
+                                    </div>*@
+
+                                <div class="form-group text-center mt-1">
+                                    <input type="submit" class="btn btn-success btn-block waves-effect waves-light" value="Ingresar" />
+                                </div>
+                                <a href="pages-recoverpw.html" class="text-muted"><i class="mdi mdi-lock mr-1"></i> ¿Olvidaste tu contraseña?</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

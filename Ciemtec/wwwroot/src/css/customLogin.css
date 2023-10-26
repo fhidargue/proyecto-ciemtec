@@ -1,0 +1,51 @@
+body, html {
+    /*    background-color: #002855;*/
+    background-color: #FFFFFF;
+}
+
+.authentication-bg {
+    /*    background-color: #002855;*/
+    background-color: #FFFFFF;
+}
+
+.account-card-box .card {
+    border-color: #002855;
+    border-radius: 10px;
+}
+
+.btn-success {
+    background-color: #EF3340;
+    border-color: #EF3340;
+}
+
+    .btn-success:hover,
+    .btn-success:active,
+    .btn-success:focus,
+    .btn-success:visited {
+        /*background-color: #002855 !important;
+    border-color: #002855 !important;    */
+        background-color: #c91d29 !important;
+        border-color: #c91d29 !important;
+    }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #EF3340;
+    border-radius: 3px;
+}
+
+.text-muted {
+    color: #FFFFFFFF !important;
+    font-weight: bold;
+}
+
+.mt-5, .my-5 {
+    margin-top: 7rem !important;
+}
+
+.btn-success:focus, .btn-success.focus {
+    box-shadow: none !important;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
+    box-shadow: none !important;
+}

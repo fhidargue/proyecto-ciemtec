@@ -1,0 +1,335 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>@*@ViewData["Title"] -*@CIEMTEC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Responsive bootstrap 4 admin template" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../src/images/ciemtec/favicon.ico">
+
+    <link href="../src/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="../src/libs/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="../src/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="../src/libs/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- App css -->
+    <link href="../src/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+    <link href="../src/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../src/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+    <link href="../src/css/customIndex.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+    <!---Dropify-->
+    <link href="../src/libs/dropify/dropify.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                    <li class="dropdown notification-list">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle nav-link">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#"
+                           role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="mdi mdi-bell-outline noti-icon"></i>
+                            <span class="noti-icon-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="font-16 text-white m-0">
+                                    <span class="float-right">
+                                        <a href="" class="text-white">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Notification
+                                </h5>
+                            </div>
+
+                            <div class="slimscroll noti-scroll">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-success">
+                                        <i class="mdi mdi-settings-outline"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        New settings
+                                        <small class="text-muted">There are new settings available</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info">
+                                        <i class="mdi mdi-bell-outline"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        Updates
+                                        <small class="text-muted">There are 2 new updates available</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger">
+                                        <i class="mdi mdi-account-plus"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        New user
+                                        <small class="text-muted">You have 10 unread messages</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info">
+                                        <i class="mdi mdi-comment-account-outline"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        Caleb Flakelar commented on Admin
+                                        <small class="text-muted">4 days ago</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-secondary">
+                                        <i class="mdi mdi-heart"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        Carlos Crouch liked
+                                        <b>Admin</b>
+                                        <small class="text-muted">13 days ago</small>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-primary notify-item notify-all">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light"
+                           data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="../src/images/usuarios/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                            <span class="d-none d-sm-inline-block ml-1 font-weight-semibold font-color">José Luis</span>
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-header noti-title">
+                                <h6 class="text-overflow text-white m-0">!Bienvenido!</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="pagina-perfil.html" class="dropdown-item notify-item">
+                                <i class="mdi mdi-account-outline"></i>
+                                <span>Perfil</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="pagina-bloqueo.html" class="dropdown-item notify-item">
+                                <i class="mdi mdi-lock-outline"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- item-->
+                            <a href="pagina-inicio-sesion.html" class="dropdown-item notify-item">
+                                <i class="mdi mdi-logout-variant"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="pagina-inicial.html" class="logo text-center logo-light">
+                        <span class="logo-lg">
+                            <img src="../src/images/ciemtec/logo-light.png" style="height: 35px;" alt="" height="22">
+                            <!-- <span class="logo-lg-text-dark">Uplon</span> -->
+                        </span>
+                        <span class="logo-sm">
+                            <!-- <span class="logo-lg-text-dark">U</span> -->
+                            <img src="../src/images/ciemtec/logo.png" style="height: 40px;" alt="" height="24">
+                        </span>
+                    </a>
+                </div>
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                </ul>
+
+            </div> <!-- Fin de container en la barra inicial -->
+        </div>
+        <!-- end Topbar -->
+        <div class="topbar-menu">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li class="has-submenu">
+                            <a href="pagina-inicial.html">
+                                <i class="fas fa-home"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="pagina-personal.html">
+                                <i class="fas fa-user-clock"></i>Personal
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="pagina-servicio.html">
+                                <i class="fas fa-clipboard"></i>Servicios
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="@Url.ActionLink("EquipoIndex","Equipo")">
+                                <i class="fas fa-microscope"></i>Equipos
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="pagina-insumos.html">
+                                <i class="fas fa-flask"></i>Insumos
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a id="controlIndex" href="@Url.ActionLink("ControlIndex","Control")">
+                                <i class="fas fa-users"></i>Control <div class="arrow-down"></div>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="@Url.ActionLink("ControlIndex","Control")" ">Personal</a></li>
+                                <li><a href="@Url.ActionLink("RolesIndex","Control")" ">Roles</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="pagina-nosotros.html">
+                                <i class="fas fa-info"></i>Nosotros
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- Finaliza el menú de navegación -->
+                    <div class="clearfix">
+
+                    </div>
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="footerCustome">
+        <div class="container-fluid">
+            <div class="row" style="margin-right: -12px; margin-left: 12px;">
+                <div class="col-md-12">
+                    2020 &copy; CIEMTEC<br>
+                    <a href="https://www.tec.ac.cr/centros-investigacion/centro-investigacion-extension-ingenieria-materiales-ciemtec">
+                        Tecnológico
+                        de Costa Rica
+                    </a>
+                    <hr />
+                    <div class="button-list">
+                        <a href="https://www.facebook.com/tecnologicocostarica" class="btn btn-facebook waves-effect waves-light">
+                            <i class="mdi mdi-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/Teccr?s=20" class="btn btn-twitter waves-effect waves-light">
+                            <i class="mdi mdi-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/teccostarica/?hl=es-la" class="btn btn-instagram waves-effect waves-light">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- end Footer -->
+
+    <script src="~/src/src/js/vendor/jquery.js"></script>
+
+    <!-- Vendor js -->
+    <script src="../src/js/vendor.min.js"></script>
+
+
+    <!-- Datatable plugin js -->
+    <script src="../src/libs/datatables/jquery.dataTables.min.js"></script>
+    <script src="../src/libs/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <script src="../src/libs/datatables/dataTables.responsive.min.js"></script>
+    <script src="../src/libs/datatables/responsive.bootstrap4.min.js"></script>
+
+    <script src="../src/libs/datatables/dataTables.buttons.min.js"></script>
+    <script src="../src/libs/datatables/buttons.bootstrap4.min.js"></script>
+
+    <script src="../src/libs/jszip/jszip.min.js"></script>
+    <script src="../src/libs/pdfmake/pdfmake.min.js"></script>
+    <script src="../src/libs/pdfmake/vfs_fonts.js"></script>
+
+    <script src="../src/libs/datatables/buttons.html5.min.js"></script>
+    <script src="../src/libs/datatables/buttons.print.min.js"></script>
+
+    <script src="../src/libs/datatables/dataTables.keyTable.min.js"></script>
+    <script src="../src/libs/datatables/dataTables.select.min.js"></script>
+
+    <!--Morris Chart-->
+    <script src="../src/libs/morris-js/morris.min.js"></script>
+    <script src="../src/libs/raphael/raphael.min.js"></script>
+
+    <!-- Dashboard init js-->
+    <script src="../src/js/pages/dashboard.init.js"></script>
+
+    <!-- Datatables init -->
+    <script src="../src/js/pages/datatables.init.js"></script>
+    <!---Dropifile-->
+    <script src="../src/libs/dropify/dropify.min.js"></script>
+    <!-- App js -->
+    <script src="../src/js/app.min.js"></script>
+    <!-- Init js-->
+    <script src="../src/js/pages/form-fileuploads.init.js"></script>
+
+
+
+</body>
+
+</html>
